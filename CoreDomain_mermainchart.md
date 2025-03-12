@@ -62,8 +62,8 @@ erDiagram
         string[] ProductSettings
         string[] DetailSettingsSettings
      }
-    ClientSettings }|..|{Settings : has
-    Settings {
+    ClientSettings }|..|{DefaultSettings : has
+    DefaultSettings {
         int DefaultSettingsIdentifier
         string NameSetting
         string SettingType
@@ -218,6 +218,11 @@ erDiagram
         decimal Amount
         string[] CurrentAccountStatus
         string[] UseExpirationBalance
+    }
+
+    Product }|..|{ testJuanito : has
+    testJuanito         {
+        int testjuanitoId 
     }
 
  
